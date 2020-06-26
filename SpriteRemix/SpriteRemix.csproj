@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\circle.png" />
+    <None Remove="Images\paint-brush.png" />
+    <None Remove="Images\paint-can.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MiqM.Xceed.Wpf.Toolkit.NETCore" Version="3.5.1.3" />
+    <PackageReference Include="WriteableBitmapEx" Version="1.6.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Behaviors\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\circle.png" />
+    <Resource Include="Images\paint-brush.png" />
+    <Resource Include="Images\paint-can.png" />
+  </ItemGroup>
+
+</Project>
